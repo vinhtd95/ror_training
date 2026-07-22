@@ -18,4 +18,4 @@ ans.each do |k, v|
     p v 
 end
 
-#eat tea tan ate nat bat
+#eat tea tan ate nat bat 
