@@ -1,7 +1,8 @@
 def character_frequency(str)
     hash = Hash.new(0)
-    ln = str.length 
+    ln = str.length
     for i in 0..(ln-1)
+        # TODO : Bỏ qua khoảng trắng — đề bài yêu cầu không đếm space
         hash[str[i]] += 1
     end
     ans = hash.sort_by{|k, v| -v}.to_h

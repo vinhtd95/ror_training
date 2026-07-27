@@ -8,14 +8,16 @@ def group_anagrams(words)
         end
         groups[char_count] << word
     end
+    # TODO : Trả về groups.values (array các nhóm) thay vì Hash cho đúng format đề bài
     groups
-end 
+end
 
 input = gets.chomp.split(" ")
 ans = group_anagrams(input)
 
+# TODO : iterate vòng lặp theo array sau khi sửa
 ans.each do |k, v|
-    p v 
+    p v
 end
 
-#eat tea tan ate nat bat 
+#eat tea tan ate nat bat
