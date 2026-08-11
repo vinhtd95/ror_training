@@ -1,0 +1,47 @@
+
+#wrapper{
+    max-width: 960px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+#header{
+    padding: 15px 0px;
+}
+
+#footer{
+    padding: 10px 0px;
+}
+
+#wp-content {
+    display: flex;
+    min-height: 400px;
+    flex:auto;
+}
+#content {
+    padding: 10px;
+    flex: 1 1 600px;
+}
+#sidebar {
+    padding: 10px;
+    flex: 1 1 360px;
+}
+.bg-box1{
+    background: wheat;
+}
+
+.gb-box2{
+    background:floralwhite ;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.bg-green {
+    background-color: blue;
+} 
