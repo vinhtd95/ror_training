@@ -5,6 +5,7 @@ def first_unique_character(str)
     end
     str.each_char do |x|
         if char_count[x] == 1
+            # TODO: Return ký tự x (hoặc nil nếu không có), không return true và không dùng p
             p x
             return true
         end

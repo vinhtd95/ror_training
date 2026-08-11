@@ -8,10 +8,11 @@ target = gets.chomp.to_i
 def two_sum(nums, target)
     hash = {}
     nums.each_with_index do |val, idx|
-        remain = target - val 
+        remain = target - val
         if hash.key?(remain)
+            # TODO : Không dùng puts — hàm phải return mảng [hash[remain], idx] theo đề bài
             puts "[#{hash[remain]}, #{idx}]"
-            return 
+            return
         else
             hash[val] = idx
         end
