@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display flex order</title>
+    <title>Display flex basis</title>
 </head>
 <body>
 
@@ -11,7 +11,7 @@
         .container{
             background-color: blanchedalmond;
             display: flex;
-
+            flex-wrap: wrap;
         }
         .flex-item{
             background-color: tomato;
@@ -21,6 +21,11 @@
             font-size: 18px;
             text-align: center;
             color: white;
+            flex-basis: auto;
+            /*
+            auto thì sẽ tự động lấy size của thuộc tính bên trong, hoặc của height/width nếu có khai báo 
+            
+            */
         }
         
         .item-1{
@@ -28,12 +33,13 @@
         }
         .item-3{
             order: 2;
+            flex-basis: 50%;
         }
         .item-2{
             order: 3;
         }
     </style>
-    <h1>Display flex order </h1>
+    <h1>Display flex basis </h1>
     <div class="container">
         <div class="flex-item item-1">1</div>
         <div class="flex-item item-2">2</div>
