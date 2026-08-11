@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTR selector</title>
+</head>
+<body>
+    <style>
+        a[href]{
+            color:cyan;
+        }
+        a[href $= "com"]{
+            color:red;
+        }
+    </style>
+    <h1>Attr selector</h1>
+    <a href="https://www.youtube.com/">AAAAAAAAAAA</a><br>
+    <a href="https://google.com/">BBBBBBBBBBB</a>
+</body>
+</html>

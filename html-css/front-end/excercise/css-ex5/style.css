@@ -1,0 +1,52 @@
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header {
+    padding: 15px 0px;
+}
+
+#footer {
+    padding: 10px 0px;
+}
+
+#content {
+    padding: 10px;
+    width: 580px;
+    min-height: 400px;
+}
+
+#sidebar {
+    padding: 10px;
+    width: 340px;
+    min-height: 400px;
+}
+
+.bg-green {
+    background: green;
+}
+
+.bg-box1{
+    background: wheat;
+}
+
+.gb-box2{
+    background:floralwhite ;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.float-left {
+    float: left;
+}
+
+.clear-both {
+    clear: both;
+}

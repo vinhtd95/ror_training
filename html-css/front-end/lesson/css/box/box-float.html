@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box float</title>
+    <style>
+        #wrapper {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .post-title {
+            display: block; /* Giúp tiêu đề chiếm nguyên 1 dòng độc lập */
+            margin-bottom: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+        }
+        .post-thumb {
+            width: 200px;
+            float: left; /* Đẩy ảnh sang trái để chữ trôi quanh bên phải */
+            margin-right: 15px; /* Dùng margin để tạo khoảng cách với chữ tốt hơn padding */
+        }
+        .post-thumb img {
+            max-width: 100%;
+            display: block;
+        }
+        /* Clearfix để thẻ article ôm trọn các phần tử float bên trong */
+        article::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Float</h1>
+        <article>
+            <a href="" class="post-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, officiis?</a>
+            
+            <a href="" class="post-thumb">
+                <img src="../image/download (2).jpg" alt="">
+            </a>
+            
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum quisquam obcaecati quos ullam? Quibusdam itaque asperiores ex, nisi earum possimus temporibus vel iste hic quod? Quasi voluptatibus perferendis nam provident quae illo natus fuga numquam veritatis, qui aliquid odit quo placeat ducimus est molestias aspernatur facilis, quibusdam eligendi omnis deserunt. Distinctio nulla qui ipsum esse, dolorem commodi magni laboriosam.
+            </p>
+        </article>
+    </div>
+</body>
+</html>

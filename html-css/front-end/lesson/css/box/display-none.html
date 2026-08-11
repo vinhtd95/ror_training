@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display none</title>
+</head>
+
+<body>
+    <style>
+        ul.sub-menu{
+            display: none;
+        }
+        ul#main-menu li:hover ul.sub-menu{
+            display: block;
+        }
+    </style>
+    <h1>Display none</h1>
+    <ul id="main-menu">
+        <li><a href="">Trang chu</a></li>
+        <li><a href="">Gioi thieu</a></li>
+        <li><a href="">San pham</a>
+            <ul class="sub-menu">
+                <li><a href="">Giay</a></li>
+                <li><a href="">Tui xach</a></li>
+                <li><a href="">San pham</a></li>
+            </ul>
+        </li>
+        <li><a href="">Lien he</a></li>
+    </ul>
+</body>
+
+</html>

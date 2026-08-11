@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display block</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+        .link-group a{
+            display: block;
+            background: teal;
+            float: left;
+            padding: 6px 15px;
+            color: white;
+            border-right: 1px solid black;
+            margin-right: 2px;
+        }
+        #wrapper .link-group a:hover{
+            background: pink;
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Display Block</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum reiciendis quod, nostrum dolor repellat id
+            voluptates alias omnis optio maxime animi facere? Explicabo neque a temporibus distinctio suscipit labore?
+        </p>
+        <div class="link-group">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+            <a href="">Link 5</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

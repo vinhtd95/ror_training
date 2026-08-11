@@ -1,0 +1,39 @@
+
+#margin{
+    width: 960px;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#margin h1 + p{
+    font-weight: bold;
+}
+
+#bai1 p{
+    line-height: 1.5;
+}
+
+#bai2 h2{
+    text-transform: uppercase;
+}
+#bai2 h2 + p{
+    text-align: justify;
+}
+
+.chuki{
+    text-align: right;
+    color: green;
+}
+
+.hight-light1{
+    font-weight: bold;
+}
+
+.hight-light2{
+    text-decoration-line: line-through;
+}
