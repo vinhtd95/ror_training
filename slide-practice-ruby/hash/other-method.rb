@@ -43,3 +43,4 @@ inventory = { apple: 10, banana: 20 }
 item = inventory.shift 
 # item => [:apple, 10]
 # inventory lúc này chỉ còn => {:banana=>20}
+
