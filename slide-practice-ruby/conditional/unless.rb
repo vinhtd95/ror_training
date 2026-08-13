@@ -4,8 +4,6 @@ unless x >= 2
 else
   puts "x is greater than 2"
 end
-
-$var = 1
 $var = 1
 print "1 -- Value is set\n" if $var
 print "2 -- Value is set\n" unless $var
