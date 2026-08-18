@@ -1,0 +1,22 @@
+Phần A
+a1 - B
+a2 - B
+a3 - C
+a4 - C
+a5 - C 
+a6 - A 
+
+Phần B
+B1
+Chiều rộng thực tế mà thẻ box chiếm là: 
+    300 + padding * 2 (trái - phải) + border * 2 (trái - phải)
+    = 300 + 20 * 2 + 5 * 2 
+    = 350 (px)
+Nếu thêm dòng box-sizing: border-box thì chiều rộng thực tế là 300px 
+(bao gồm cả padding và border, phần content có width = 300 - 20*2 - 5*2 = 250px)
+
+B2
+2 thẻ có class item sẽ nằm ngang, cùng hàng, do có thuộc tính display: flex 
+(nếu chỉ khai báo display-flex thì thứ tụ hiển thị mặc định theo row)
+
+Do có justify-content: center nên các khối bên trong container sẽ căn ở giữa. 

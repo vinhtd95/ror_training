@@ -1,0 +1,7 @@
+Viết Ruby code để đọc file:
+users.txt
+và in toàn bộ nội dung ra màn hình.
+Sau đó viết code để append thêm:
+New user
+vào cuối file.
+New user
