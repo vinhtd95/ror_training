@@ -1,0 +1,135 @@
+/* ==========================================================================
+   MODERN CSS RESET
+   Mục đích: Xóa bỏ các style mặc định khác nhau giữa các trình duyệt
+   (Chrome, Firefox, Safari, Edge...) để bạn có một điểm xuất phát
+   đồng nhất khi bắt đầu style cho dự án.
+   ========================================================================== */
+
+/* 1. Dùng border-box cho mọi phần tử để việc tính width/height dễ đoán hơn */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Xóa margin và padding mặc định mà trình duyệt tự thêm vào */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Chuẩn hóa font, chiều cao dòng, và bật font-smoothing cho html/body */
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+}
+
+/* 4. Danh sách (ul, ol) thường có style bullet/number và margin khác nhau
+      giữa các trình duyệt -> reset về dạng "list không style" */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* 5. Heading và các thẻ text không kế thừa font-weight/size mặc định lộn xộn */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* 6. Link: bỏ underline và màu mặc định để bạn tự kiểm soát */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 7. Ảnh và media: nhiều trình duyệt để inline gây khoảng trắng thừa bên dưới */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 8. Form elements: input, button, textarea, select không kế thừa font
+      giữa các trình duyệt -> ép chúng dùng font giống phần còn lại của trang */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* 9. Bỏ outline mặc định xấu xí, nhưng vẫn giữ khả năng tiếp cận (accessibility)
+      bằng cách chỉ ẩn khi không dùng bàn phím để điều hướng (focus-visible) */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* 10. Bảng: border-collapse khác nhau giữa các trình duyệt */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 11. Fieldset/legend thường có border, padding mặc định rất khác nhau */
+fieldset {
+  border: none;
+}
+
+/* 12. Textarea: mặc định có thể resize tự do gây lệch layout, và không có font */
+textarea {
+  resize: vertical;
+}
+
+/* 13. HR: mỗi trình duyệt style khác nhau, reset về đường kẻ đơn giản */
+hr {
+  border: none;
+  border-top: 1px solid currentColor;
+}
+
+/* 14. Tôn trọng người dùng đã bật "reduce motion" trong hệ điều hành */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 15. Root stacking context cho các app SPA (React, Vue...) nếu bạn dùng */
+#root,
+#__next {
+  isolation: isolate;
+}

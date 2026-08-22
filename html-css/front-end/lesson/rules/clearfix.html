@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .box-parent{
+            width: 960px;
+            margin: 0px auto;
+            background-color: blanchedalmond;
+        }
+        .box-left, .box-right{
+            min-height: 600px;
+            float: left;
+        }
+        .box-left{
+            width: 600px;
+            background-color: burlywood;
+        }
+        .box-right{
+            width: 360px;
+            background-color: cornflowerblue;
+        }
+        .box-bottom{
+            height: 650px;
+            background-color: yellow;
+            width: 960px;
+            margin: 0px auto;
+        }
+        .clearfix:after{
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+        .clearfix{
+            clear: both;
+            display: block;
+        }
+    </style>
+    <h1>clear-fix</h1>
+    <div class="box-parent"> <!-- cach 1 , them class clearfix vao day-->
+        <div class="box-left">
+            LEFT
+        </div>
+        <div class="box-right">
+            RIGHT
+        </div>
+    </div>
+    <div class="clearfix"></div> <!-- cach 2 -->
+    <div class="box-bottom">
+        BOTTOM
+    </div>
+</body>
+</html>
