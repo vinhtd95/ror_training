@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    background-color: #EEEEEE;
+    background-color: #f5f4f4;
     padding-top: 20px;
 }
 
@@ -111,6 +111,7 @@
     background-color: white;
     text-align: center;
     border-radius: 20px;
+    padding-bottom: 40px;
 }
 
 .about-10kn h1 {
@@ -140,5 +141,4 @@
     margin: 0px 0px 0px 96px;
     width: 959px;
     justify-content: center;
-
 }
