@@ -54,7 +54,6 @@
 }
 
 .tech-right {
-    flex: 1;
     padding: 16px 20px 16px 24px;
     display: flex;
     flex-direction: column;
