@@ -1,42 +1,41 @@
-.header{
+.header {
     width: 100%;
     background-color: #EEEEEE;
+    padding-top: 20px;
 }
 
-.header-container{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   height: 94px;
-   padding: 0 40px;
-}
-
-.logo{
-    display: block;
-    padding: 0;
+.header-container {
+    display: flex;
     align-items: center;
-    height: 45px;
-    padding: 0 20px;
+    justify-content: space-between;
+    height: 94px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
-.nav-menu ul{
+.logo {
+    height: 90px;
+}
+
+.nav-menu ul {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 80px;
 }
 
-.nav-menu a{
+.nav-menu a {
     font-weight: bold;
     color: #165e83;
     font-size: 14px;
 }
 
-.nav-menu a{
+.nav-menu a {
     text-decoration: none;
 }
 
-.btn-cta{
+.btn-cta {
     background-color: #165e83;
     color: white;
     padding: 12px 30px;
@@ -46,5 +45,100 @@
     font-size: 14px;
 }
 
+/*Header-intro CSS*/
+.header-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 40px 0px 40px;
+    overflow: hidden;
+}
 
+.intro-text {
+    flex: 1;
+}
 
+.intro-text h1 {
+    color: #165e83;
+    font-family: "Noto Sans";
+    font-size: 80px;
+    font-weight: 400;
+    height: auto;
+    line-height: 0.93;
+    margin-bottom: 24px;
+}
+
+.intro-text h2 {
+    color: #165e83;
+    font-family: "Noto Sans";
+    font-size: 26px;
+    font-weight: 600;
+    height: auto;
+    line-height: 1.6;
+}
+
+.intro-img {
+    flex: 1.2;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 530px;
+}
+
+.intro-img img:first-child {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 748px;
+    left: -100px;
+}
+
+.intro-img img:last-child {
+    position: absolute;
+    z-index: 1;
+    width: 110%;
+    max-width: 748px;
+    top: 30px;
+    right: 35px;
+}
+
+.about-10kn {
+    width: 1110px;
+    margin: 0px auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.about-10kn h1 {
+    padding-top: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    height: auto;
+    line-height: 0.8;
+    color: #165e83
+}
+
+.about-10kn h2 {
+    color: #0b2d3f;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+}
+
+.about-10kn h3 {
+    color: #0b2d3f;
+    font-size: 16px;
+    font-weight: 500;
+    height: 102px;
+    letter-spacing: 0.1em;
+    line-height: 2.4;
+    margin: 0px 0px 0px 96px;
+    width: 959px;
+    justify-content: center;
+
+}
