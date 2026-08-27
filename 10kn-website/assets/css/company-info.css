@@ -1,0 +1,53 @@
+.company-info {
+    width: 1280px;
+    margin: 0px auto;
+    margin-top: 80px;
+}
+
+.company-info-wrapper {
+    width: 1110px;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+}
+
+.cpn-info {
+    width: 480px;
+    margin-right: 60px;
+}
+
+.cpn-info h1 {
+    color: #165e83;
+    font-size: 32px;
+    font-weight: 700;
+    height: 52px;
+    left: 35px;
+    line-height: 1.4;
+}
+
+.cpn-info h2 {
+    color: #0b2d3f;
+    font-size: 24px;
+    font-weight: 600;
+    height: 67px;
+    left: 36px;
+    line-height: 1.83;
+    margin-bottom: 45px;
+}
+
+.cpn-info text {
+    color: #0b2d3f;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.cpn-img img {
+  height: 400px; 
+  width: 435px;
+  border-radius: 20px; 
+}
+
+.cpn-img {
+    margin-left: 40px; 
+}
