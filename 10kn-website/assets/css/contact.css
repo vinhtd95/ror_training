@@ -1,0 +1,87 @@
+#contact {
+    background-color: #165e83;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.outer-box {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 60px 90px 40px 90px;
+}
+
+.contact-mess {
+    width: 380px;
+    color: #ffffff;
+}
+
+.contact-mess h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.contact-mess p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2.1;
+}
+
+.contact-form {
+    width: 580px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    width: 140px; 
+    color: #165e83;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #165e83;
+}
+
+.form-group textarea {
+    resize:none;
+}
+
+.form-btn {
+    text-align: right; 
+    margin-top: 10px;
+}
+
+.form-btn button {
+    background-color: #165e83;
+    color: #ffffff;
+    border: none;
+    padding: 12px 48px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: opacity 0.3s;
+}

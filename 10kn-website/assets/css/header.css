@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 94px;
+    min-height: 94px;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 40px;
@@ -142,3 +142,9 @@
     width: 959px;
     justify-content: center;
 }
+
+.social-icon{
+    display: flex;
+    gap: 20px;
+}
+
