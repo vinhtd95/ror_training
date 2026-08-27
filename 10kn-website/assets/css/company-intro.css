@@ -1,0 +1,95 @@
+.company-section {
+    width: 1280px;
+    margin: 0px auto;
+    color: white;
+}
+
+.company-intro-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cpn-intro-text {
+    position: absolute;
+    display: flex;
+    top: 10%;
+    padding-left: 75px;
+    padding-right: 75px;
+    box-sizing: border-box;
+}
+
+.cpn-intro-text h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    height: auto;
+    letter-spacing: 0.1em;
+    line-height: 1.28;
+    text-align: center;
+}
+
+.cpn-intro-text-1 {
+    width: 33.3333%;
+}
+
+.cpn-intro-text-2 {
+    width: 66.6666%;
+}
+
+.cpn-intro-text-2 p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 3;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 10px;
+}
+
+.cpn-intro-slogan {
+    position: absolute;
+    bottom: 22%;
+    left: 0;
+    right: 0;
+    padding-left: 75px;
+    padding-right: 75px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cpn-intro-slogan > h3{
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cpn-intro-slogan-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  gap: 45px;
+}
+
+.cpn-intro-slogan-1,
+.cpn-intro-slogan-2,
+.cpn-intro-slogan-3 {
+  width: 33.3333%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.cpn-intro-slogan li{
+    list-style: none;
+}
+
+.slogan-title{
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}

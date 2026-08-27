@@ -1,0 +1,54 @@
+.founder {
+    width: 1280px;
+    margin: 0px auto;
+    margin-top: 80px;
+}
+
+.founder-wrapper {
+    width: 1110px;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+}
+
+.founder>h3 {
+    padding-left: 85px;
+    margin-bottom: 30px;
+    color: #165e83;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.founder-infor {
+    margin-left: 60px;
+    align-content: center;
+}
+
+
+.founder-infor h4 {
+    color: #0b2d3f;
+    font-size: 24px;
+    font-weight: 500;
+    left: 500px;
+    letter-spacing: 0.1em;
+    line-height: 1.24;
+}
+
+.founder-infor h5 {
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.founder-infor p {
+    bottom: 140px;
+    color: #0b2d3f;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 2.3;
+}
