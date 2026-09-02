@@ -27,5 +27,19 @@
 #       "yes": yup
 #       enabled: "ON"
 
+# config/locales/en.yml
 en:
-  hello: "Hello world"
+  products:
+    index:
+      title: "Products"
+
+# config/locales/es.yml
+es:
+  products:
+    index:
+      title: "Productos"
+
+jp:
+  products:
+    index:
+      title: "プロジェクト"
