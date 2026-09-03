@@ -17,5 +17,8 @@ Rails.application.routes.draw do
   delete "/products/:id", to: "products#destroy"
 
   get "/register", to: "registrations#new", as: "register"
-  post "/register", to: "registrations#create"
+  post "/register", to: "registrations#create"  
+
+  post "/products/:product_id/subscribers", to: "subscribers#create", as: "product_subscribers"
+
 end
