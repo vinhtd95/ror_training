@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resource :session
   resources :passwords, param: :token
+  resource :unsubscribe, only: [ :show ]
+
   # ...
   root "products#index"
   get "/products", to: "products#index"
