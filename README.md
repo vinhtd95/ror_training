@@ -10,5 +10,5 @@ Note: Learn how to use "devise" gem for authentication
 - [x] When fill in the correct email/password created from "register" page, user can access the "Product" page
 - [x] When logged in, user can see "Logout" button
 - [x] When click "Logout", user is logged out and redirected to the login page
-- [x] When access "Edit Product" page without logging in, user is redirected to login page
+- [x] When access "Product" page without logging in, user is redirected to login page
 
