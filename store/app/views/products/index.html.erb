@@ -1,14 +1,45 @@
 <h1><%= t ".title" %></h1>
 <h1>Products</h1>
-<%= link_to "New product", new_product_path%>
-<div id="products">
+
+<p><%= link_to "New product", new_product_path, class: "btn-primary" %></p>
+
+<div class="products-grid">
   <% @products.each do |product| %>
-    <div>
-        <a href="/products/<%= product.id %>">
-            <%= product.name %>
-        </a>
+    <div class="product-card">
+      <div class="card-image">
+        <% if product.featured_image.attached? %>
+          <%= image_tag product.featured_image %>
+        <% else %>
+          <div class="image-placeholder">No Image</div>
+        <% end %>
+      </div>
+
+      <div class="card-body">
+        <h3 class="card-title">
+          <%= link_to product.name, product %>
+        </h3>
+
+        <p class="card-price">
+          <%= number_to_currency(product.price, unit: "$", format: "%n %u", precision: 0) %>
+        </p>
+
+        <div class="card-status">
+          <% if product.inventory_count.positive? %>
+            <span class="badge in-stock">Còn <%= product.inventory_count %></span>
+          <% else %>
+            <span class="badge out-of-stock">Hết hàng</span>
+          <% end %>
+        </div>
+
+        <div class="card-action">
+          <%= link_to "Xem chi tiết", product, class: "btn-detail" %>
+        </div>
+      </div>
     </div>
   <% end %>
 </div>
-<%= link_to "Login", new_session_path unless authenticated? %>
-<%= link_to "Register", register_path unless authenticated? %>
+
+<div class="auth-links">
+  <%= link_to "Login", new_session_path unless authenticated? %>
+  <%= link_to "Register", register_path unless authenticated? %>
+</div>
