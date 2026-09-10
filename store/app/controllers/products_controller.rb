@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
   def index
     @products = Product.all
+    @phone_products = Product.where("LOWER(category) = ?", "Điện thoại")
   end
 
   def show
@@ -43,6 +44,6 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.expect(product: [ :name, :description, :featured_image, :inventory_count, :price ])
+    params.expect(product: [ :name, :description, :featured_image, :inventory_count, :price, :category ])
   end
 end

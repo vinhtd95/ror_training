@@ -1,8 +1,31 @@
-<h1><%= t ".title" %></h1>
-<h1>Products</h1>
-
 <p><%= link_to "New product", new_product_path, class: "btn-primary" %></p>
 
+<%#Slider dien thoai%>
+<%if @phone_products.any? %>
+  <h2>New Product</h2>
+  <div class="owl-carousel owl-theme phone-slider">
+    <% @phone_products.each do |product| %>
+      <% cache product do %>
+      <div class="item">
+        <div class="product-card">
+          <div class="card-image">
+            <% if product.featured_image.attached? %>
+              <%= image_tag product.featured_image %>
+            <% else %>
+              <div>No Image</div>
+            <% end %>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title"><%= link_to product.name, product %></h3>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
+<%end%>
+
+<h1><%= t ".title" %></h1>
 <div class="products-grid">
   <% @products.each do |product| %>
     <div class="product-card">
@@ -10,7 +33,7 @@
         <% if product.featured_image.attached? %>
           <%= image_tag product.featured_image %>
         <% else %>
-          <div class="image-placeholder">No Image</div>
+          <div>No Image</div>
         <% end %>
       </div>
 
